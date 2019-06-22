@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style/style.scss";
-import Layout from './components/Layout';
+import Layout from './containers/Layout';
 import { BrowserRouter as Router } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from "@fortawesome/free-solid-svg-icons";

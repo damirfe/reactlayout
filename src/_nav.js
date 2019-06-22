@@ -9,6 +9,16 @@ export default {
             name: 'Gebruikers',
             url: '/gebruikers',
             icon: 'user-friends',
+        },
+        {
+            name: 'Other',
+            url: '/other',
+            icon: 'fighter-jet',
+        },
+        {
+            name: 'Example',
+            url: '/example',
+            icon: 'hamburger',
         }
     ]
 }

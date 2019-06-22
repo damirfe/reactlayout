@@ -7,6 +7,25 @@
 }
 
 .sidebar-item {
+  display: flex;
   cursor: pointer;
   padding: 1rem;
+  text-decoration: none;
+  flex-direction: row;
+  color: $primaryRed;
+
+  p {
+    margin: 0;
+    padding-left: 0.75rem;
+  }
+
+  &:hover {
+    background: $primaryRed;
+    color: white;
+  }
+}
+
+.active-link {
+  background: $primaryRed;
+  color: white;
 }
