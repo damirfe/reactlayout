@@ -1,28 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import UserDropdown from "./UserDropdown";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const data = [
-    {
-        iconGroup: "fas",
-        iconName: "adjust",
-        text: "action 1",
-        action: () => {
-            console.log("action 1");
-        }
-    },
-    {
-        iconGroup: "fas",
-        iconName: "atom",
-        text: "action 2",
-        action: () => {
-            console.log("action 2");
-        }
-    }
-];
 
-const UserPreview = ({ avatar, username }) => {
-    const [isOpen, setisOpen] = useState(false);
+
+const UserPreview = ({ avatar, username, data }) => {
+    // const [isOpen, setisOpen] = useState(false);
     return (
         <div className="row dropdown-container">
             <div className="avatar-container">

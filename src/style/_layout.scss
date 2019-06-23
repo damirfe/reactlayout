@@ -44,19 +44,6 @@ body {
   }
 }
 
-.sidebar {
-  border: 1px solid #e5e5e5;
-  width: 10rem;
-  overflow: hidden;
-  &:hover {
-    overflow: auto;
-  }
-}
-
-.sidebar-mini {
-  width: 3.2rem;
-}
-
 .main-holder {
   display: flex;
   flex: 1;

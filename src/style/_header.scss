@@ -1,5 +1,7 @@
 .toggle-nav {
+  display: none;
   cursor: pointer;
+  margin-left: 2.5rem;
 }
 
 .dropdown-container {
@@ -19,7 +21,7 @@
   z-index: 1;
   flex-direction: column;
   width: 12rem;
-  border: 1px solid $primaryGrey;
+  border: 1px solid $primaryRed;
 }
 
 .dropdown-container:hover > .user-dropdown {
@@ -32,6 +34,7 @@
   display: flex;
   height: 4rem;
   align-items: center;
+  color: $primaryGrey;
   cursor: pointer;
   p {
     padding-right: 5px;
@@ -49,11 +52,38 @@
   align-items: center;
   height: 2.5rem;
   padding: 1rem;
+  background: #fff;
   p {
     margin-left: 0.75rem;
   }
   &:hover {
-    background: $hoverGrey;
+    background: $primaryRed;
     color: #fff;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    justify-content: space-around;
+  }
+
+  .header > * {
+    width: 33%;
+  }
+
+  .logo-holder {
+    display: flex;
+    justify-content: center;
+    margin-right: 0 !important;
+  }
+
+  .toggle-nav {
+    display: flex;
+  }
+
+  .avatar-container {
+    img {
+      display: none;
+    }
   }
 }

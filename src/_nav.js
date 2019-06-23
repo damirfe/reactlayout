@@ -11,14 +11,33 @@ export default {
             icon: 'user-friends',
         },
         {
-            name: 'Other',
-            url: '/other',
+            name: 'Cinc',
+            url: '/cin',
             icon: 'fighter-jet',
         },
         {
-            name: 'Example',
-            url: '/example',
+            name: 'Whatever',
+            url: '/whatever',
+            icon: 'atlas',
+        },
+        {
+            name: 'Other list',
+            url: '/other',
             icon: 'hamburger',
+            children: [
+                {
+                    name: 'Virtual vaults',
+                    url: '/other/vv',
+                },
+                {
+                    name: 'YielDD',
+                    url: '/other/yield',
+                },
+                {
+                    name: 'Betabit',
+                    url: '/other/betabit',
+                }
+            ]
         }
     ]
 }

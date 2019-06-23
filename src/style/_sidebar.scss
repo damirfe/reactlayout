@@ -1,6 +1,31 @@
+.sidebar {
+  border: 1px solid #e5e5e5;
+  width: 12rem;
+  overflow: hidden;
+  p {
+    line-height: 16px;
+  }
+  &:hover {
+    overflow: auto;
+  }
+}
+
+.sidebar-mini {
+  width: 4.5rem;
+  .sidebar-item {
+    &:hover {
+      width: 12rem;
+      z-index: 1;
+      p {
+        display: flex;
+      }
+    }
+  }
+}
+
 .retract-sidebar {
   background: #2f353a;
-  display: flex;
+  display: none;
   svg {
     margin-left: auto;
   }
@@ -9,23 +34,36 @@
 .sidebar-item {
   display: flex;
   cursor: pointer;
-  padding: 1rem;
+  padding: 1.5rem;
   text-decoration: none;
   flex-direction: row;
   color: $primaryRed;
 
   p {
     margin: 0;
-    padding-left: 0.75rem;
+    padding: 0 0.75rem;
+    color: $primaryGrey;
   }
 
   &:hover {
     background: $primaryRed;
     color: white;
+    p{
+      color:white;
+    }
   }
 }
 
 .active-link {
   background: $primaryRed;
   color: white;
+  p {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .retract-sidebar {
+    display: none;
+  }
 }

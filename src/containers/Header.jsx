@@ -1,20 +1,20 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import UserPreview from '../components/UserPreview';
+import UserPreview from '../components/User/UserPreview';
 
 
-const Header = ({ navOpen, setNavOpen, navMinimaized }) => {
+const Header = ({ navOpen, setNavOpen, navMinimaized, headerData }) => {
     return (
         <nav className="header">
-            <Link to={"/dashboard"} className="logo-holder">
-                {navMinimaized ? (<img src="../boss_logo_small.svg" alt="logo" />) : (<img src="../boss.svg" alt="logo" />)}
-
-            </Link>
             <div className="toggle-nav" onClick={() => setNavOpen(!navOpen)}>
                 <FontAwesomeIcon icon={['fas', 'bars']} size="lg" />
             </div>
-            <UserPreview username="Damir Ivanic" avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGU54ExC4_YTchKmnVahe9S7BB6tWYb_bv03VnkfD1O5MONGQK"/>
+            <Link to={"/dashboard"} className="logo-holder">
+                {navMinimaized ? (<img src={headerData.logosmall} alt="small logo" />) : (<img src={headerData.logo} alt="main-logo" />)}
+
+            </Link>
+            <UserPreview data={headerData.dropdownData} username={headerData.username} avatar={headerData.avatar} />
         </nav>
     )
 }
