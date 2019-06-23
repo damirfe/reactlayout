@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Dashboard = React.lazy(() => import("./containers/Dashboard.jsx"))
-const Gebruikers = React.lazy(() => import("./containers/Gebruikers.jsx"))
+const Dashboard = React.lazy(() => import("./lib/containers/Dashboard.jsx"))
+const Gebruikers = React.lazy(() => import("./lib/containers/Gebruikers.jsx"))
 
 const routes = [
     { path: '/dashboard', name: "Dashboard", component: Dashboard, exact: true },

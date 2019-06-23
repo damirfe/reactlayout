@@ -1,6 +1,6 @@
 import React from 'react'
-import "./style/style.scss";
-import Layout from './containers/Layout';
+import "./lib/style/style.scss";
+import { Layout } from './lib/index.js';
 import { BrowserRouter as Router } from "react-router-dom";
 import nav from "./_nav";
 import routes from "./routes";
