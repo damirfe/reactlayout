@@ -4,6 +4,7 @@ import Sidebar from './Sidebar';
 import Main from './Main';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from "@fortawesome/free-solid-svg-icons";
+import "../style/style.scss";
 
 library.add(fas)
 
